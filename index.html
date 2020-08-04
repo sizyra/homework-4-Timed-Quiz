@@ -13,10 +13,31 @@
             <h1>Coding Quiz</h1>
         </div>
         <div class='row'>
-            <p class='text-justified'>Press the button below to start a timed coding quiz. Correct answers add one point to your score. Incorrect answers will remove 5 seconds from your time. You will be given two minutes to start - good luck!</p>
+            <p class='text-justified'>Press the button below to start a timed coding quiz. Correct answers add one point to your score. Incorrect answers will remove 10 seconds from your time. You will be given 60 seconds to answer 10 questions - good luck!</p>
         </div>
-        <div id='buttonDiv'>
-            <button onclick='buttonpress()' id='begin' type="button" class="btn btn-large btn-success mt-1">Start Quiz</button>
+        <div class='row'>
+            <div class='col-4 p-4'>
+                <ol type="A" id='questionSpot' style='visibility:hidden'>
+                    <lh class='h6 text-justified' id='questionAsk'></lh>
+                    <li id='optionA' onclick="userAnswer('a')"></li>
+                    <li id='optionB' onclick="userAnswer('b')"></li>
+                    <li id='optionC' onclick="userAnswer('c')"></li>
+                </ul>
+            </div>
+            <div class='col-4 text-center' id='buttonDiv'>
+                <div class='row'>
+                    <button onclick='buttonpress()' id='begin' type="button" class="btn btn-large btn-success mt-1">Start Quiz</button>
+                </div>
+                <div class='row' id='record' style='visibility:hidden'>
+                    <p>Enter your initials below to record your score!</p>
+                    <input id='initials' class='form-control' type='text' placeholder="Ender initials here.">
+                </div>
+            </div>
+            <div class='col-4 text-right mt-5'>
+                <h4 id='score' style='visibility:hidden'>Score: </h4>
+                <br>
+                <h4 id='time' style='visibility:hidden'></h4>
+            </div>
         </div>
     </div>
 

@@ -9,7 +9,19 @@ Workday 1:
 Arranged basic formatting and initial working pieces. Installed a start button that will disappear when clicked, allowing new visuals to take its place.
 
 	To-do:
-	- Use JS to create a <div> for each question and its answers
+	- Use JS to create a <div> for each question and its answers.
 	- Arrange <div>s to disappear when unneeded and for new ones to take their place.
 	- Arrange timer to be displayed from the moment the start button is clicked.
 	- Connect timer to answers so that incorrect ones will lower time, and running out of time will end the quiz.
+
+Workday 2 & 3:
+Created functioning quiz with score increasing for every correct answer. 
+Timer starts at button press and counts down from 60 to 0. 
+Time is penalized for every incorrect answer correctly.
+
+	Issues:
+	- Cannot get final screen (no questions, area for initials) to show up.
+	- Timer can glitch and go below 0 if a question is answer wrong too close to 0.
+
+	To-do:
+	- Ensure recorded answers are stored locally
