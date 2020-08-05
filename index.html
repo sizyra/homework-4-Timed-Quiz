@@ -19,9 +19,9 @@
             <div class='col-4 p-4'>
                 <ol type="A" id='questionSpot' style='visibility:hidden'>
                     <lh class='h6 text-justified' id='questionAsk'></lh>
-                    <li id='optionA' onclick="userAnswer('a')"></li>
-                    <li id='optionB' onclick="userAnswer('b')"></li>
-                    <li id='optionC' onclick="userAnswer('c')"></li>
+                    <li id='optionA' onclick="userAnswer(0, 'a')"></li>
+                    <li id='optionB' onclick="userAnswer(0, 'b')"></li>
+                    <li id='optionC' onclick="userAnswer(0, 'c')"></li>
                 </ul>
             </div>
             <div class='col-4 text-center' id='buttonDiv'>
@@ -30,13 +30,17 @@
                 </div>
                 <div class='row' id='record' style='visibility:hidden'>
                     <p>Enter your initials below to record your score!</p>
-                    <input id='initials' class='form-control' type='text' placeholder="Ender initials here.">
+                    <form id='form'>
+                        <input id='initials' class='form-control' type='text' placeholder="Ender initials here.">
+                    </form>
+                    <br>
+                    <ol id='scores'></ol>
                 </div>
             </div>
             <div class='col-4 text-right mt-5'>
-                <h4 id='score' style='visibility:hidden'>Score: </h4>
+                <h4 id='score' class='mr-3' style='visibility:hidden'>Score: </h4>
                 <br>
-                <h4 id='time' style='visibility:hidden'></h4>
+                <h4 id='time' class='mr-3' style='visibility:hidden'></h4>
             </div>
         </div>
     </div>
